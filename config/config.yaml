@@ -255,7 +255,6 @@ display:
     - new_items                           # 2️⃣ 新增热点区域
     - hotlist                             # 3️⃣ 热榜区域（关键词匹配 / AI 智能筛选）
     - rss                                 # 4️⃣ RSS 订阅区域
-    - standalone                          # 5️⃣ 独立展示区
 
   # 推送区域开关
   # 控制各区域是否启用（配合 region_order 使用）
@@ -268,7 +267,7 @@ display:
                                       # 开启后将对 RSS 进行关键词分析并在通知中展示
                                       # 关闭后跳过分析，但独立展示区不受影响
 
-    standalone: true                  # 独立展示区（完整热榜/RSS，不受关键词过滤）
+    standalone: false                 # 独立展示区（完整热榜/RSS，不受关键词过滤）
     ai_analysis: true                 # AI 分析区域
 
   # 📋 独立展示区配置
